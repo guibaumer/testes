@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <section class="container">
+        <h1>TAXA METABÓLICA BASAL</h1>
+        <form>
+            <input type="number" class="peso" placeholder="Peso" required>
+            <input type="number" class="altura" placeholder="Altura" required>
+            <input type="number" class="idade" placeholder="Idade" required>
+            <label for="ihomem">Homem</label>
+            <input type="radio" name="sexo" id="ihomem" value="H" checked>
+            <label for="imulher">Mulher</label>
+            <input type="radio" name="sexo" id="imulher" value="M">
+            <label for="nivel">Nívek de atividade:</label>
+            <select id="nivel">
+                <option value="sedentario">Sedentário</option>
+                <option value="ativo">Ativo</option>
+                <option value="B">etc</option>
+                <option value="C">etc</option>
+            </select>
+            <input type="button" value="CALCULAR" class="botao">
+        </form>
+    </section>
+
+    <script src="index.js"></script>
+</body>
+</html>
