@@ -173,7 +173,7 @@ iframe {
 .column {
     background-color: var(--azul);
     border-radius: 0px 30px 0px 10px;
-    height: 900px;
+    height: 915px;
     width: 240px;
     margin-top: 0px;
     padding-bottom: 40px;
@@ -221,7 +221,7 @@ iframe {
     text-align: center;
 }
 .last-line {
-    margin-bottom: 52px;
+    margin-bottom: 76px;
 }
 .linha-maior {
     border-bottom: 2px solid #fff;
@@ -253,6 +253,7 @@ strong {
     height: 400px;
     width: 200px;
     margin-top: 0px;
+    transform: translateY(-30px);
 }
 .column-footer {
     display: flex;
