@@ -34,9 +34,6 @@ body {
     padding-top: 70px;
     padding-bottom: 70px;
 }
-.section:nth-child(odd) {
-    background-color: rgb(12, 81, 58);
-}
 .flex-column {
     display: flex;
     flex-direction: column;
@@ -428,8 +425,9 @@ section.section-pix#section-3 {
 
 /* QUARTA SECTION */
 
-.comments {
+section.comments {
     background-color: var(--azul);
+    padding-bottom: 0px;
 }
 .comments h2 {
     color: var(--amarelo);
@@ -474,28 +472,78 @@ section.section-pix#section-3 {
     justify-content: left;
     align-items: center;
 }
+.comment-4 {
+    padding-bottom: 5px;
+}
 
+/* QUINTA SECTION */
 
+.big-number {
+    
+}
+section.vantagens {
+    color: #fff;
+    font-size: 18px;
+    gap: 10px;
+    padding-bottom: 40px;
+}
+.vantagem {
+    background-color: #62b5fe;
+    background-color: #046fcd;
+    padding: 20px;
+    border-radius: 20px 20px 20px 20px;
+    width: 95%;
+    max-width: 800px;
+}
+.out-image {
+    height: 100px;
+    margin-left: 5px;
+}
+.diploma {
+    /* transform: rotate(-100deg); */
+}
 
 
 
 /* MEDIA QUERIES */
+@media all and (max-width: 320px) {
+    section.comments h2 {
+        font-size: 30px;
+    }
+}
 
-@media all and (max-width: 390px) {
-    .ampulheta {
+
+
+@media all and (max-width: 450px) {
+    img.out-image {
         display: none;
     }
 }
-/* @media all and (max-width: 504px) {
-    div.column-header.ch-1 {
-        margin-bottom: 70px;
-    }
-    button.testar.botao-1 {
-        transform: translateY(-60px);
-    }
-} */
 @media all and (max-width: 660px) {
     .rocket {
         display: none;
     }    
+    img.big-number {
+        height: 70px;
+    }
+    img.out-image {
+        height: 70px;
+    }
+}
+
+@media all and (max-width: 390px) {
+    .vantagem .flex-row {
+        flex-direction: column;
+    text-align: center;
+
+    }
+    .ampulheta {
+        display: none;
+    }
+    img.big-number {
+        height: 50px;
+        background-color: var(--azul);
+        border-radius: 50%;
+        padding: 3px;
+    }
 }
