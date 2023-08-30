@@ -389,12 +389,6 @@ img.trophy {
 .reverse {
     flex-direction: row-reverse;
 }
-
-
-
-
-
-
 section.section-pix#section-3 {
     padding-top: 0;
     background-color: #FFF;
@@ -432,8 +426,54 @@ section.section-pix#section-3 {
     margin-bottom: 0;
 }
 
+/* QUARTA SECTION */
 
-
+.comments {
+    background-color: var(--azul);
+}
+.comments h2 {
+    color: var(--amarelo);
+    font-family: 'burger';
+    font-size: 38px;
+    margin: auto;
+    text-align: center;
+    letter-spacing: 1px;
+    margin-bottom: 4%;
+}
+.container-flex {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* gap: 10px; */
+    flex-wrap: wrap;
+}
+.comment {
+    background-color: #fff;
+    max-width: 500px;
+    min-height: 200px;
+    font-size: 15px;
+    padding: 20px;
+    border-radius: 70px 0px 70px 0px;
+    border: 2px solid var(--amarelo);
+    margin: 10px 10px 10px 10px;
+}
+.person span {
+    color: #000;
+    margin-left: 9px;
+    font-size: 18px;
+    /* font-size: 22px; */
+}
+.comment img {
+    border-radius: 50%;
+    height: 50px;
+    /* margin-left: 20px; */
+}
+.person {
+    width: 100%;
+    display: flex;
+    justify-content: left;
+    align-items: center;
+}
 
 
 
