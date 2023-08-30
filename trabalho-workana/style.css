@@ -157,9 +157,9 @@ iframe {
     font-weight: bold;
 }
 .ampulheta {
-    transform: rotate(20deg);
+    transform: rotate(-20deg);
     margin-right: 5px;
-    height: 70px;
+    height: 90px;
 }
 
 /* SEGUNDA SECTION */
@@ -169,11 +169,13 @@ iframe {
     gap: 25px;
     color: #fff;
     flex-wrap: wrap;
+    padding-bottom: 30px;
 }
 .column {
     background-color: var(--azul);
     border-radius: 0px 30px 0px 10px;
-    height: 915px;
+    /* height: 915px; */
+    height: 400px;
     width: 240px;
     margin-top: 0px;
     padding-bottom: 40px;
@@ -188,7 +190,7 @@ iframe {
     width: 240px;
     margin: 10px 0px 0px 0px;
     font-size: 19px;
-    margin-bottom: 0;
+    /* margin-bottom: 20px; */
     text-align: center;
 }
 .ch-yellow {
@@ -203,30 +205,33 @@ iframe {
     margin-top: 0;
     transform: translateY(-22px);
 }
+.ch-blue {
+    transform: translateY(-22px);
+    margin-top: 0;
+}
 .ch-2 {
     border-bottom-left-radius: 0;
     padding-bottom: 30px;
 }
 .ch-1 {
-    margin-bottom: 119px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 22px;
+    height: 90px;
 }
-.column-1 {
-    transform: translateY(-63px);
-}
+
 .linha {
-    border-bottom: 2px solid #fff;
+    /* border-bottom: 2px solid #fff; */
     width: 90%;
     /* margin: 15px; */
     padding: 15px;
     text-align: center;
 }
-.last-line {
-    margin-bottom: 76px;
-}
 .linha-maior {
-    border-bottom: 2px solid #fff;
+    /* border-bottom: 2px solid #fff; */
     width: 90%;
-    padding: 31px;
+    padding: 17px;
     text-align: center;
 }
 .vip {
@@ -236,6 +241,20 @@ iframe {
     letter-spacing: 1px;
     text-transform: lowercase;
     color: var(--amarelo);
+}
+.buy {
+    font-family: 'tabarra-strong';
+    color: #F78012;
+    text-align: center;
+    font-size: 30px;
+    margin-top: 20px;
+    border: none;
+    background: none;
+    letter-spacing: 2px;
+}
+.buy-1 {
+    color: #FABB17;
+    margin-top: 50px;
 }
 strong {
     font-family: 'tabarra-strong';
@@ -273,12 +292,14 @@ strong {
 }
 .all {
     font-size: 24px;
+    text-align: center;
 }
 .cf-y {
     background-color: var(--amarelo);
     color: #000;
     transform: translateY(-32px);
     padding: 20px;
+    padding-bottom: 5px;
 }
 .times {
     display: block;
@@ -307,11 +328,10 @@ strong {
     font-size: 23px;
 }
 .column-footer-1 {
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
     gap: 8px;
-    transform: translateY(-80px);
+    transform: translateY(-35px);
+    padding-bottom: 5px;
+    height: 223px;
 }
 .testar {
     padding: 15px;
@@ -326,6 +346,54 @@ strong {
 }
 
 /* TERCEIRA SECTION */
+
+.bonus-vip {
+    max-width: 800px;
+    width: 90%;
+    min-height: 240px;
+    background-color: var(--azul);
+    margin-bottom: 30px;
+    border-radius: 0px 20px 0px 50px;
+    padding: 0px 0px 15px 0px;
+}
+.title {
+    color: var(--azul);
+    background-color: var(--amarelo);
+    text-align: center;
+    border-radius: 0px 15px 0px 15px;
+    font-size: 24px;
+    letter-spacing: 3px;
+    padding: 8px;
+}
+.div-container {
+    display: flex;
+    flex-wrap: wrap;
+    /* background-color: red; */
+}
+.bonus-imgs {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: nowrap;
+    color: white;
+    width: 240px;
+    margin: auto;
+    padding: 7px;
+}
+.bonus-imgs img {
+    height: 90px;
+}
+img.trophy {
+    height: 80px;
+}
+.reverse {
+    flex-direction: row-reverse;
+}
+
+
+
+
+
 
 section.section-pix#section-3 {
     padding-top: 0;
@@ -373,19 +441,19 @@ section.section-pix#section-3 {
 
 /* MEDIA QUERIES */
 
-@media all and (max-width: 370px) {
+@media all and (max-width: 390px) {
     .ampulheta {
         display: none;
     }
 }
-@media all and (max-width: 504px) {
+/* @media all and (max-width: 504px) {
     div.column-header.ch-1 {
         margin-bottom: 70px;
     }
     button.testar.botao-1 {
         transform: translateY(-60px);
     }
-}
+} */
 @media all and (max-width: 660px) {
     .rocket {
         display: none;
