@@ -480,7 +480,7 @@ section.comments {
 /* QUINTA SECTION */
 
 .big-number {
-    
+    height: 180px;
 }
 section.vantagens {
     color: #fff;
@@ -489,7 +489,6 @@ section.vantagens {
     padding-bottom: 40px;
 }
 .vantagem {
-    background-color: #62b5fe;
     background-color: #046fcd;
     padding: 20px;
     border-radius: 20px 20px 20px 20px;
@@ -500,22 +499,17 @@ section.vantagens {
     height: 100px;
     margin-left: 5px;
 }
-.diploma {
-    /* transform: rotate(-100deg); */
-}
-
-
 
 
 img.certificado {
-    /* display: block; */
-    width: 100%;
+    /* width: 100%; */
     height: 100%;
     margin: 10px 0px 10px 0px;
-    /* margin: auto; */
+    /* max-width: 500px; */
+    width: 100%;
 }
 .div-certificado {
-    flex-wrap: wrap;
+    /* flex-wrap: wrap; */
 }
 .caracteristicas {
     max-width: 300px;
@@ -523,29 +517,76 @@ img.certificado {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    align-items: flex-end;
-    
-}
-.caracteristicas-right {
-    text-align: right;
-    align-items: flex-start;
+    align-items: center;
 }
 .caracteristicas p {
     text-align: center;
     margin: 15px;
-    background-color: #FBD324;
     padding: 5px 10px 5px 10px;
     border-radius: 30px;
-
-    border: 2px solid #595959;
-
+    position: relative;
+}
+.small-number {
+    color: var(--azul);
 }
 .div-img-certificado {
+    /* width: 100%; */
+    /* max-width: 500px; */
     width: 100%;
     max-width: 500px;
+    /* height: 350px; */
 }
 h2.white {
     color: #FFF;
+}
+.seta {
+    position: absolute;
+    height: 140px;
+    height: 130px;
+}
+.seta-1 {
+    /* top: -20px;
+    right: -120px;
+    transform: rotate(-16deg) rotateX(174deg);     */
+    top: -10px;
+    right: -120px;
+    transform: rotate(150deg) rotateX(174deg); 
+}
+.seta-2 {
+    top: -15px;
+    right: -130px;
+    transform: rotate(160deg) rotateX(200deg); 
+}
+.seta-3 {
+    top: -15px;
+    right: -130px;
+    transform: rotate(240deg) rotateX(0deg);
+}
+.seta-4 {
+    /* top: -15px; */
+    top: 5px;
+    right: -40px;
+    transform: rotate(240deg) rotateX(0deg);
+}
+.seta-5 {
+    top: -20px;
+    left: -120px;
+    transform: rotate(30deg) rotateX(0deg);
+}
+.seta-6 {
+    top: -20px;
+    left: -120px;
+    transform: rotate(30deg) rotateX(0deg);
+}
+.seta-7 {
+    top: -10px;
+    left: -120px;
+    transform: rotate(300deg) rotateX(210deg);
+}
+.seta-8 {
+    top: -10px;
+    left: -55px;
+    transform: rotate(300deg) rotateX(210deg);
 }
 
 .text {
@@ -722,15 +763,44 @@ div.reverse-row {
 
 @media all and (max-width: 1112px) {
     div.div-certificado {
+        /* flex-direction: column; */
+    }
+    div.caracteristicas {
+        width: 230px;
+    }
+    .seta-8 {
+        left: -110px;
+        top: -30px;
+    }
+}
+@media all and (max-width: 960px) {
+    .seta-4 {
+        top: 0px;
+        left: 140px;
+        transform: rotate(220deg);
+    }
+}
+
+@media all and (max-width: 860px) {
+    .seta {
+        display: none;
+    }
+    .div-certificado {
         flex-direction: column;
+    }
+    .small-number {
+        font-family: 'burger';
+        color: #fff;
+        font-size: 22px;
+        background-color: #577bf6;
+        padding: 1px 9px 1px 9px;
+        border-radius: 50%;
+    }
+    .caracteristicas p {
+        
     }
     div.caracteristicas {
         width: 100%;
-        max-width: 500px;
-    }
-    div.caracteristicas p {
-        margin-bottom: 5px;
-        border-radius: 5px;
     }
 }
 
@@ -762,9 +832,6 @@ div.reverse-row {
     div.buying {
         flex-direction: column;
     }
-    .div-img-buying img {
-        /* height: 130px; */
-    }
     .div-img-buying {
         padding: 10px;
         margin-bottom: 15px;
@@ -778,26 +845,18 @@ div.reverse-row {
     .title-white {
         font-size: 29px;
     }
-
     footer p {
         font-size: 14px;
     }
     .creditos {
         font-size: 14px;
     }
-    .footer-div {
-        /* width: 97%; */
-        /* max-width: unset; */
-    }
     footer.flex-row {
         gap: 0px;
     }
     .footer-div {
-        /* text-align: center; */
         height: auto;
         margin: 10px;
-        /* padding: 10px; */
-        /* margin-bottom: 20px; */
     }
 }
 
