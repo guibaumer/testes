@@ -6,15 +6,15 @@
 }
 @font-face {
     font-family: 'burger';
-    src: url('insaniburger/Insanibc.ttf') format('truetype');
+    src: url('assets/insaniburger/Insanibc.ttf') format('truetype');
 }
 @font-face {
     font-family: 'tabarra';
-    src: url('tabarra/TabarraPro-Light-FFP.ttf') format('truetype');
+    src: url('assets/tabarra/TabarraPro-Light-FFP.ttf') format('truetype');
 }
 @font-face {
     font-family: 'tabarra-strong';
-    src: url('tabarra/TabarraPro-Black-FFP.ttf');
+    src: url('assets/tabarra/TabarraPro-Black-FFP.ttf');
 }
 * {
     margin: 0;
@@ -23,7 +23,6 @@
 }
 body {
     font-family: 'tabarra', sans-serif;
-    /* font-weight: normal; */
     font-weight: bold;
 }
 .burger {
@@ -252,6 +251,7 @@ iframe {
 .buy-1 {
     color: #FABB17;
     margin-top: 50px;
+    transform: translateY(20px);
 }
 strong {
     font-family: 'tabarra-strong';
@@ -288,8 +288,10 @@ strong {
     font-weight: lighter;
 }
 .all {
-    font-size: 24px;
+    /* font-size: 24px; */
+    font-size: 20px;
     text-align: center;
+    font-family: 'tabarra-strong';
 }
 .cf-y {
     background-color: var(--amarelo);
@@ -305,6 +307,9 @@ strong {
     color: #747474;
     font-weight: lighter;
     text-align: left;
+}
+.times .arial {
+    font-weight: bold;
 }
 .price {
     color: #747474;
@@ -857,6 +862,9 @@ div.reverse-row {
     .footer-div {
         height: auto;
         margin: 10px;
+    }
+    .pix span.arial {
+        display: block;
     }
 }
 
