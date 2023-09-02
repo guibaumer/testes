@@ -251,7 +251,7 @@ iframe {
 .buy-1 {
     color: #FABB17;
     margin-top: 50px;
-    transform: translateY(20px);
+    transform: translateY(15px);
 }
 strong {
     font-family: 'tabarra-strong';
@@ -507,14 +507,9 @@ section.vantagens {
 
 
 img.certificado {
-    /* width: 100%; */
     height: 100%;
     margin: 10px 0px 10px 0px;
-    /* max-width: 500px; */
     width: 100%;
-}
-.div-certificado {
-    /* flex-wrap: wrap; */
 }
 .caracteristicas {
     max-width: 300px;
@@ -550,9 +545,6 @@ h2.white {
     height: 130px;
 }
 .seta-1 {
-    /* top: -20px;
-    right: -120px;
-    transform: rotate(-16deg) rotateX(174deg);     */
     top: -10px;
     right: -120px;
     transform: rotate(150deg) rotateX(174deg); 
@@ -568,7 +560,6 @@ h2.white {
     transform: rotate(240deg) rotateX(0deg);
 }
 .seta-4 {
-    /* top: -15px; */
     top: 5px;
     right: -40px;
     transform: rotate(240deg) rotateX(0deg);
@@ -651,9 +642,6 @@ footer {
     min-height: 300px;
     padding-top: 50px;
     padding-bottom: 20px;
-}
-footer.flex-row {
-    /* gap: 40px; */
 }
 footer .arial {
     font-weight: normal;
@@ -767,9 +755,6 @@ div.reverse-row {
 
 
 @media all and (max-width: 1112px) {
-    div.div-certificado {
-        /* flex-direction: column; */
-    }
     div.caracteristicas {
         width: 230px;
     }
@@ -800,9 +785,6 @@ div.reverse-row {
         background-color: #577bf6;
         padding: 1px 9px 1px 9px;
         border-radius: 50%;
-    }
-    .caracteristicas p {
-        
     }
     div.caracteristicas {
         width: 100%;
