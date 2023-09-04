@@ -9,24 +9,34 @@
 <body>
     <section class="container">
         <h1>TAXA METABÓLICA BASAL</h1>
-        <form>
-            <input type="number" class="peso" placeholder="Peso" required>
-            <input type="number" class="altura" placeholder="Altura" required>
-            <input type="number" class="idade" placeholder="Idade" required>
-            <label for="ihomem">Homem</label>
-            <input type="radio" name="sexo" id="ihomem" value="H" checked>
-            <label for="imulher">Mulher</label>
-            <input type="radio" name="sexo" id="imulher" value="M">
-            <label for="nivel">Nívek de atividade:</label>
-            <select id="nivel">
-                <option value="sedentario">Sedentário</option>
-                <option value="ativo">Ativo</option>
-                <option value="B">etc</option>
-                <option value="C">etc</option>
-            </select>
-            <input type="button" value="CALCULAR" class="botao">
+        <form class="form">
+            <p><input type="number" class="peso" placeholder="Peso" required></p>
+            <p><input type="number" class="altura" placeholder="Altura" required></p>
+            <p><input type="number" class="idade" placeholder="Idade" required></p>
+            <p>
+                <label for="ihomem">Homem</label>
+                <input type="radio" name="sexo" id="ihomem" value="H" checked>
+            </p>
+            <p>
+                <label for="imulher">Mulher</label>
+                <input type="radio" name="sexo" id="imulher" value="M">
+            </p>
+            <p>
+                <label for="nivel">Nível de atividade:</label>
+                <select id="nivel">
+                    <option value="sedentario">Sedentário</option>
+                    <option value="pouco_ativo">Pouco ativo</option>
+                    <option value="ativo">Ativo</option>
+                    <option value="muito_ativo">Muito ativo</option>
+                </select>
+            </p>
+            <p><input type="button" value="CALCULAR" class="botao"></p>
         </form>
     </section>
+
+    <footer>
+        <p>Guilherme e Leandro - 2°1</p>
+    </footer>
 
     <script src="index.js"></script>
 </body>
