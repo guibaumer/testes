@@ -28,7 +28,6 @@ botao.addEventListener('click', calcular);
     }
 
     const tmb = resultado;
-    console.log(tmb);
 
     switch(nivel) {
         case 'sedentario':
@@ -47,20 +46,30 @@ botao.addEventListener('click', calcular);
 
     resultado = resultado.toFixed(2);
 
+    const proteinas = Number(((resultado * 0.25) / 4).toFixed(2)).toLocaleString('pt-BR');
+    const carboidratos = Number(((resultado * 0.45) / 4).toFixed(2)).toLocaleString('pt-BR');
+    const lipidios = Number(((resultado * 0.3) / 9).toFixed(2)).toLocaleString('pt-BR');
+
+    resultado = Number(resultado).toLocaleString('pt-BR');
+
     const p = document.createElement('p');
     const p2 = document.createElement('p');
+    const p3 = document.createElement('p');
     const refresh = document.createElement('button');
 
     p.classList.add('res');
     p2.classList.add('res-2');
+    p3.classList.add('res');
     refresh.classList.add('refresh');
 
-    p.innerText = 'Sua taxa metabólica basal é: ' + tmb;
-    p2.innerText = 'Seu gasto calórico é: ' + resultado;
+    p.innerText = 'Taxa metabólica basal: ' + tmb.toLocaleString ('pt-BR') + ' Kcal';
+    p2.innerText = 'Gasto calórico: ' + resultado + ' Kcal';
+    p3.innerHTML = `Nutrientes necessários:<br> PROTEÍNAS: ${proteinas} gramas<br>CARBOIDRATOS: ${carboidratos} gramas<br>LIPÍDIOS: ${lipidios} gramas`;
     refresh.innerText = 'REINICIAR';
 
     document.querySelector('.container').appendChild(p);
     document.querySelector('.container').appendChild(p2);
+    document.querySelector('.container').appendChild(p3);
     document.querySelector('.container').appendChild(refresh);
 
     document.querySelector('form').style.display = 'none';
@@ -75,4 +84,17 @@ function watchRefresh() {
        button.addEventListener('click', () => {
             location.reload()
        });
+}
+
+botao.addEventListener('mouseenter', watchArthurMorgan);
+botao.addEventListener('mouseleave', watchArthurMorgan);
+
+function watchArthurMorgan() {
+    const arthur = document.querySelector('.morgan');
+if(arthur.classList.contains('opacity')) {
+    arthur.classList.remove('opacity');
+} else {
+    arthur.classList.add('opacity');
+}
+    // document.querySelector('.morgan').style.opacity = '1';
 }

@@ -12,13 +12,14 @@ body, section, form {
 h1 {
     margin: 20px;
     font-size: 30px;
+    text-align: center;
 }
 p {
     font-size: 20px;
 }
 .container {
     width: 100%;
-    margin-top: 8%;
+    margin-top: 10px;
 }
 form {
     width: 100%;
@@ -60,17 +61,17 @@ button:hover {
 }
 .res {
     text-align: center;
-    width: 330px;
+    max-width: 360px;
     background-color: #3DE0A7;
     padding: 5px;
     border-radius: 8px;
-    margin-top: 10px;
+    margin-top: 3px;
     color: rgb(255, 255, 255);
 }
 .res-2 {
     color: white;
     text-align: center;
-    width: 330px;
+    max-width: 360px;
     background-color: #34C8ED;
     padding: 5px;
     border-radius: 8px;
@@ -80,7 +81,7 @@ button:hover {
     margin-top: 10px;
     padding: 3px;
     font-size: 18px;
-    width: 330px;
+    max-width: 360px;
 }
 footer {
     font-weight: bold;
@@ -88,4 +89,13 @@ footer {
     margin-top: 3%;
     border-radius: 15px;
     padding: 5px;
+}
+.morgan {
+    height: 100px;
+    width: 100px;
+    margin-top: 20px;
+    transition: .3s;
+}
+.opacity {
+    opacity: 0;
 }
